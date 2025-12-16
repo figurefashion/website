@@ -26,10 +26,10 @@ export default function Home() {
       <section className="pt-32 pb-0 border-b border-black">
         <div className="max-w-5xl mx-auto text-center px-8 pb-20">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal leading-[1.05] mb-10" >
-            Stop size guessing.<br />Fix fit at the source.
+            Stop size guessing.<br />Make fit authoritative.
           </h1>
           <p className="text-lg md:text-xl text-black/70 max-w-2xl mx-auto mb-6 leading-relaxed font-light">
-            MIRROR gives fashion brands tailor-level fit accuracy online - using a single camera and real body geometry, in real time.
+            MIRROR gives fashion brands deterministic, geometry-based size decisions - using a single camera and real body measurements, in real time.
           </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a href="#request-access" className="bg-black text-white px-10 py-4 text-[11px] uppercase tracking-[0.2em] hover:bg-black/80 transition-colors">
@@ -137,10 +137,10 @@ export default function Home() {
               <p className="text-[11px] uppercase tracking-[0.2em] text-black/50 mb-8">The Problem</p>
               <h2 className="text-4xl md:text-5xl font-normal leading-[1.1] mb-8" >
                 Returns aren&apos;t a logistics problem.<br />
-                <span className="italic">They&apos;re a fit problem.</span>
+                <span className="italic">They&apos;re a fit authority problem.</span>
               </h2>
               <p className="text-base text-black/70 leading-relaxed mb-10">
-                Over 70% of returns are driven by sizing. Customers guess - because they never actually see fit.
+                Over 70% of returns are driven by sizing - because customers are forced to guess.
               </p>
               <div>
                 <p className="text-[11px] uppercase tracking-[0.2em] text-black mb-6">Brands absorb the cost</p>
@@ -225,14 +225,14 @@ export default function Home() {
                     <div className="w-10 h-10 border border-black/30 mx-auto mb-2 flex items-center justify-center">
                       <div className="w-5 h-6 border border-black/30"></div>
                     </div>
-                    <p className="text-[9px] uppercase tracking-widest text-black/50">3D Body</p>
+                    <p className="text-[9px] uppercase tracking-widest text-black/50">Body Geometry</p>
                   </div>
                   <div className="text-black/30">→</div>
                   <div className="text-center flex-1">
                     <div className="w-10 h-10 border border-black/30 mx-auto mb-2 flex items-center justify-center">
                       <div className="w-4 h-5 bg-black/10 border border-black/20"></div>
                     </div>
-                    <p className="text-[9px] uppercase tracking-widest text-black/50">Simulation</p>
+                    <p className="text-[9px] uppercase tracking-widest text-black/50">Fit Engine</p>
                   </div>
                   <div className="text-black/30">→</div>
                   <div className="text-center flex-1">
@@ -247,8 +247,8 @@ export default function Home() {
             <div className="border-l border-black pl-10">
               <p className="text-[11px] uppercase tracking-[0.2em] text-black mb-8">The Result</p>
               <ul className="space-y-6 text-base text-black/80">
-                <li className="pb-6 border-b border-black/10">Customers see how a garment fits them</li>
-                <li className="pb-6 border-b border-black/10">MIRROR determines the correct size</li>
+                <li className="pb-6 border-b border-black/10">Customers understand how a garment will fit them</li>
+                <li className="pb-6 border-b border-black/10">MIRROR determines the correct size with confidence</li>
                 <li>Brands regain control over fit outcomes</li>
               </ul>
             </div>
@@ -309,7 +309,7 @@ export default function Home() {
                   <path d="M12 52 Q11 60 12 68" stroke="#888" strokeWidth="0.5" fill="none" />
                   <path d="M18 52 Q19 60 18 68" stroke="#888" strokeWidth="0.5" fill="none" />
                 </svg>
-                <p className="text-[7px] uppercase tracking-widest text-black/40">Simulate</p>
+                <p className="text-[7px] uppercase tracking-widest text-black/40">Fit</p>
               </div>
               <div className="absolute top-2 left-2 text-[10px] text-black/30">03</div>
             </div>
@@ -344,7 +344,7 @@ export default function Home() {
             {[
               { step: "01", title: "Capture", desc: "Customer opens camera from product page." },
               { step: "02", title: "Understand", desc: "Body shape estimated in real time." },
-              { step: "03", title: "Fit", desc: "Garment simulated on their body." },
+              { step: "03", title: "Fit", desc: "Garment fit evaluated against their body geometry." },
               { step: "04", title: "Decide", desc: "Best size determined automatically." },
               { step: "05", title: "Purchase", desc: "Correct size added to cart." },
             ].map((item, index) => (
@@ -392,12 +392,12 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-20">
             <div>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-black/50 mb-8">Accuracy</p>
+              <p className="text-[11px] uppercase tracking-[0.2em] text-black/50 mb-8">Authoritative Fit Decisions</p>
               <h2 className="text-4xl md:text-5xl font-normal leading-[1.1] mb-8" >
                 Size recommendations you can defend.
               </h2>
               <p className="text-base text-black/70 leading-relaxed mb-8">
-                No quizzes. No heuristics. Fit is evaluated directly - on the body.
+                No quizzes. No heuristics. Fit is evaluated directly against the customer&apos;s body geometry.
               </p>
               {/* FIT ANALYSIS VISUAL PLACEHOLDER */}
               <div className="bg-white border border-black p-6">
@@ -464,7 +464,7 @@ export default function Home() {
               <p className="text-[11px] uppercase tracking-[0.2em] text-black mb-8">Evaluation Criteria</p>
               <ul className="space-y-4 text-base text-black/80">
                 <li className="pb-4 border-b border-black/10">Body geometry per SKU size</li>
-                <li className="pb-4 border-b border-black/10">Fabric stretch, weight & drape</li>
+                <li className="pb-4 border-b border-black/10">Fabric stretch, weight & structural behavior</li>
                 <li className="pb-4 border-b border-black/10">Brand grading rules</li>
                 <li>Tension at critical fit points</li>
               </ul>
@@ -486,7 +486,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-normal leading-[1.1] mb-6">
                 You define fit.<br />MIRROR enforces it.
               </h2>
-              <p className="text-lg text-white/50">Your grading rules. Your size standards. Your fit philosophy.</p>
+              <p className="text-lg text-white/50">Your grading rules. Your size standards. Enforced consistently at checkout.</p>
             </div>
             {/* Size comparison visual */}
             <div className="flex justify-center gap-6">
@@ -631,7 +631,7 @@ export default function Home() {
             </button>
               </form>
               <p className="text-sm text-white/40 mt-8">
-                Pilot partners receive hands-on onboarding and fit calibration support.
+                Pilot partners receive hands-on onboarding, fit calibration, and size confidence benchmarking.
               </p>
             </div>
           </div>
