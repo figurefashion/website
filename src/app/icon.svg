@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#ffffff"/>
+
+  <!-- Camera body -->
+  <rect x="96" y="184" width="320" height="208" rx="48" fill="#000000"/>
+  <rect x="148" y="144" width="92" height="56" rx="20" fill="#000000"/>
+
+  <!-- Lens ring -->
+  <circle cx="256" cy="288" r="92" fill="#ffffff" opacity="0.12"/>
+  <circle cx="256" cy="288" r="72" fill="#ffffff" opacity="0.10"/>
+
+  <!-- Mesh lens: clipped to inner lens circle -->
+  <defs>
+    <clipPath id="lensClip">
+      <circle cx="256" cy="288" r="72"/>
+    </clipPath>
+    <pattern id="mesh" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 0 L24 24 M24 0 L0 24" stroke="#ffffff" stroke-width="2" opacity="0.55"/>
+      <path d="M0 12 H24 M12 0 V24" stroke="#ffffff" stroke-width="1.5" opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#lensClip)">
+    <rect x="184" y="216" width="144" height="144" fill="url(#mesh)"/>
+  </g>
+
+  <!-- Lens outline -->
+  <circle cx="256" cy="288" r="72" fill="none" stroke="#ffffff" stroke-width="10" opacity="0.85"/>
+
+  <!-- Small viewfinder dot -->
+  <circle cx="356" cy="232" r="10" fill="#ffffff" opacity="0.75"/>
+</svg>
